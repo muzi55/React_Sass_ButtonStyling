@@ -4,14 +4,14 @@ import Test from "./components/pseudoElement/Test";
 
 function App() {
   const handleBtnConsole = () => {
-    console.log("버튼이 클릭되었습니다");
+    alert("버튼이 클릭되었습니다.");
   };
 
   return (
     <>
       <h1>Sass(Scss) 사용하기</h1>
       <div>
-        <Button color="red" size="large">
+        <Button onClick={handleBtnConsole} color="red" size="large">
           전송
         </Button>
         <Button color="red" size="medium">
@@ -22,7 +22,7 @@ function App() {
         </Button>
       </div>
       <div>
-        <Button color="blue" size="large">
+        <Button onClick={handleBtnConsole} color="blue" size="large">
           전송
         </Button>
         <Button color="blue" size="medium">
@@ -36,7 +36,7 @@ function App() {
         <Button color="pink" size="large">
           전송
         </Button>
-        <Button color="pink" size="medium">
+        <Button onClick={handleBtnConsole} color="pink" size="medium">
           전송
         </Button>
         <Button color="pink" size="small">
@@ -50,7 +50,7 @@ function App() {
       <Button color="blue" size="medium" fullwidth={true} rounded={true}>
         전송
       </Button>
-      <Button color="red" size="large" fullwidth={true}>
+      <Button onClick={handleBtnConsole} color="red" size="large" fullwidth={true}>
         전송
       </Button>
 
