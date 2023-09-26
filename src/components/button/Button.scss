@@ -21,10 +21,12 @@ $pink:  #ffc0cb;
 button {
     cursor: pointer;
     border : 1px solid #000;
-    border-radius: 99999px;
     color:#fff;
 
     transition:background 0.3s;
+    &.rounded{
+        border-radius: 99999px;
+    }
     &.fullwidth {
         width: 100%;
         display: block;
