@@ -4,6 +4,16 @@ $pink:  #ffc0cb;
 
 @mixin button-color($color){
     background: $color;
+
+    &:hover,
+    &:focus {
+        background: lighten($color: $color, $amount: 5)
+        
+    }
+
+    &:active {
+        background: darken($color: $color, $amount: 10)
+    }
 }
 
 
