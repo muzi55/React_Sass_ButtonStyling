@@ -55,6 +55,7 @@ function App() {
       </Button>
 
       <Test beforeContent=":D" afterContent="C:" />
+      <Test beforeContent="before" afterContent="after" />
     </>
   );
 }
