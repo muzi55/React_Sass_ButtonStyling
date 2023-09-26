@@ -22,19 +22,21 @@ button {
     cursor: pointer;
     border : 1px solid #000;
     border-radius: 99999px;
+    color:#fff;
 
+    transition:background 0.3s;
     &.fullwidth {
         width: 100%
     }
     &.red {
         @include button-color($red);
-        color:#fff
     }
     &.blue {
-        @include button-color($blue)
+        @include button-color($blue);
     }
     &.pink {
-        @include button-color($pink)
+        @include button-color($pink);
+        color:#000;
     }
 
     &.small {

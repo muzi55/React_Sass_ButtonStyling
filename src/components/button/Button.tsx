@@ -8,11 +8,12 @@ interface Props {
   color?: "red" | "blue" | "pink";
   fullwidth?: boolean;
   rounded?: boolean;
+  type?: "button" | "submit" | "reset";
 }
 
-const Button = ({ className, onClick, color = "blue", size = "medium", rounded, fullwidth, children }: Props): JSX.Element => {
+const Button = ({ className, type = "button", onClick, color = "blue", size = "medium", rounded, fullwidth, children }: Props): JSX.Element => {
   return (
-    <button className={`${className} ${color} ${size} ${rounded} ${fullwidth}`} onClick={onClick}>
+    <button className={`${className} ${color} ${size} ${rounded} ${fullwidth}`} onClick={onClick} type={type}>
       {children}
     </button>
   );

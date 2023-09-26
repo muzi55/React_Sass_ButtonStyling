@@ -12,7 +12,10 @@ function App() {
       <Button onClick={handleBtnConsole} color="red">
         전송
       </Button>
-      <Button color="pink" fullwidth={true} rounded={true}>
+      <Button color="pink" fullwidth={true} size="large" rounded={true} type="submit">
+        서브밋
+      </Button>
+      <Button color="blue" fullwidth={true} size="small" rounded={true} type="submit">
         서브밋
       </Button>
     </>
