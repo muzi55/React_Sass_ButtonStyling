@@ -6,12 +6,13 @@ interface Props {
   children: React.ReactNode;
   size?: "small" | "medium" | "large";
   color?: "red" | "blue" | "pink";
+  fullwidth?: boolean;
   rounded?: boolean;
 }
 
-const Button = ({ className, onClick, color = "blue", size = "medium", rounded, children }: Props): JSX.Element => {
+const Button = ({ className, onClick, color = "blue", size = "medium", rounded, fullwidth, children }: Props): JSX.Element => {
   return (
-    <button className={`${className} ${color} ${size} ${rounded}`} onClick={onClick}>
+    <button className={`${className} ${color} ${size} ${rounded} ${fullwidth}`} onClick={onClick}>
       {children}
     </button>
   );

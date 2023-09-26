@@ -22,6 +22,10 @@ button {
     cursor: pointer;
     border : 1px solid #000;
     border-radius: 99999px;
+
+    &.fullwidth {
+        width: 100%
+    }
     &.red {
         @include button-color($red);
         color:#fff

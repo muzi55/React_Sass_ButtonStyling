@@ -12,6 +12,9 @@ function App() {
       <Button onClick={handleBtnConsole} color="red">
         전송
       </Button>
+      <Button color="pink" fullwidth={true} rounded={true}>
+        서브밋
+      </Button>
     </>
   );
 }
