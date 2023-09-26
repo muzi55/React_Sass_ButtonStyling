@@ -10,14 +10,48 @@ function App() {
   return (
     <>
       <h1>Sass(Scss) 사용하기</h1>
-      <Button onClick={handleBtnConsole} color="red">
+      <div>
+        <Button color="red" size="large">
+          전송
+        </Button>
+        <Button color="red" size="medium">
+          전송
+        </Button>
+        <Button color="red" size="small">
+          전송
+        </Button>
+      </div>
+      <div>
+        <Button color="blue" size="large">
+          전송
+        </Button>
+        <Button color="blue" size="medium">
+          전송
+        </Button>
+        <Button color="blue" size="small">
+          전송
+        </Button>
+      </div>
+      <div>
+        <Button color="pink" size="large">
+          전송
+        </Button>
+        <Button color="pink" size="medium">
+          전송
+        </Button>
+        <Button color="pink" size="small">
+          전송
+        </Button>
+      </div>
+
+      <Button color="pink" size="small" fullwidth={true}>
         전송
       </Button>
-      <Button color="pink" fullwidth={true} size="large" rounded={true} type="submit">
-        서브밋
+      <Button color="blue" size="medium" fullwidth={true} rounded={true}>
+        전송
       </Button>
-      <Button color="blue" fullwidth={true} size="small" rounded={true} type="submit">
-        서브밋
+      <Button color="red" size="large" fullwidth={true}>
+        전송
       </Button>
 
       <Test beforeContent=":D" afterContent="C:" />

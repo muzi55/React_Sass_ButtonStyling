@@ -12,8 +12,10 @@ interface Props {
 }
 
 const Button = ({ className, type = "button", onClick, color = "blue", size = "medium", rounded, fullwidth, children }: Props): JSX.Element => {
+  const styleRounded = rounded ? "rounded" : "";
+  const styleFullwidth = fullwidth ? "fullwidth" : "";
   return (
-    <button className={`${className} ${color} ${size} ${rounded} ${fullwidth}`} onClick={onClick} type={type}>
+    <button className={`${className} ${color} ${size} ${styleRounded} ${styleFullwidth}`} onClick={onClick} type={type}>
       {children}
     </button>
   );
