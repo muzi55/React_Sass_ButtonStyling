@@ -1,0 +1,24 @@
+$red: #9b111e;
+$blue : #00498c;
+$pink:  #ffc0cb;
+
+@mixin button-color($color){
+    background: $color;
+}
+
+
+button {
+    cursor: pointer;
+    border : 1px solid #000;
+    
+    &.red {
+        @include button-color($red)
+    }
+    &.blue {
+        @include button-color($red)
+    }
+    &.blue {
+        @include button-color($red)
+    }
+    
+}
