@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./components/button/Button";
+import Test from "./components/pseudoElement/Test";
 
 function App() {
   const handleBtnConsole = () => {
@@ -18,6 +19,8 @@ function App() {
       <Button color="blue" fullwidth={true} size="small" rounded={true} type="submit">
         서브밋
       </Button>
+
+      <Test beforeContent=":D" afterContent="C:" />
     </>
   );
 }

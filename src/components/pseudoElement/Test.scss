@@ -1,0 +1,13 @@
+.test {
+    font-size: 20px;
+
+    &::before{
+        content: attr(data-before-content); 
+        color:blue;
+    }
+
+    &::after{
+        content: attr(data-after-content);
+        color:aqua;
+    }
+}
