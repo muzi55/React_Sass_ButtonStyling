@@ -10,11 +10,12 @@ $pink:  #ffc0cb;
         background: lighten($color: $color, $amount: 5)
         
     }
-
     &:active {
         background: darken($color: $color, $amount: 10)
     }
 }
+
+
 
 
 button {
@@ -22,13 +23,24 @@ button {
     border : 1px solid #000;
     
     &.red {
-        @include button-color($red)
+        @include button-color($red);
+        color:#fff
     }
     &.blue {
-        @include button-color($red)
+        @include button-color($blue)
     }
-    &.blue {
-        @include button-color($red)
+    &.pink {
+        @include button-color($pink)
+    }
+
+    &.small {
+        padding: 0.4rem 1rem;
+    }
+    &.medium {
+        padding: 0.6rem 1.4rem;
+    }
+    &.large {
+        padding: 0.8rem 1.8rem;
     }
     
 }
