@@ -6,6 +6,11 @@ Sass를 사용한 `Button` 컴포넌트 스타일링
 
 사용한 타입
 
+<br/>
+<br/>
+<br/>
+
+
 ```tsx
 interface Props {
   className?: string;
@@ -33,6 +38,10 @@ export default Button;
 - className과 color, sizem rounded, fullwidth 로 버튼 크기, 색상을 컨트롤 할 수 있다.
 - onClick 으로 이벤트를 넣어줄 수 있다.
 - ...rest를 추가해서 기타 다른 이벤트및 다른 속성들도 추가해 줄 수 있다.
+<br/>
+<br/>
+<br/>
+
 
 ## after before
 
@@ -56,6 +65,9 @@ export default Test;
 ```
 
 `before`, `after` 의 컨텐츠의 값은 HTML의 data속성으로 넣어줬다. data-before-content, data-after-content 란 속성쓴 후 css에서 값을 받아와 사용하는 방식이다.
+<br/>
+<br/>
+<br/>
 
 ```css
 .test {
